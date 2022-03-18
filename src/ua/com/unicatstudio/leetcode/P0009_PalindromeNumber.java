@@ -1,6 +1,6 @@
 package ua.com.unicatstudio.leetcode;
 
-public class p0009_PalindromeNumber {
+public class P0009_PalindromeNumber {
     // https://leetcode.com/problems/palindrome-number/
     public boolean isPalindrome(int x) {
         int sourceX = x;

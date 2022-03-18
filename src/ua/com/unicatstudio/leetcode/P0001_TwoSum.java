@@ -1,6 +1,6 @@
 package ua.com.unicatstudio.leetcode;
 
-public class p0001_TwoSum {
+public class P0001_TwoSum {
     // https://leetcode.com/problems/two-sum/
     public int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {

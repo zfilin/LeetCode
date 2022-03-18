@@ -3,7 +3,7 @@ package ua.com.unicatstudio.leetcode;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class p0013_RomanToInteger {
+public class P0013_RomanToInteger {
     // https://leetcode.com/problems/roman-to-integer/
     public LinkedHashMap<String, Integer> getAlphabet() {
         LinkedHashMap<String, Integer> alphabet = new LinkedHashMap<>();
