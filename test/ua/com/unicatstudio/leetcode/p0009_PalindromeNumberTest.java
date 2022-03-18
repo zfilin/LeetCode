@@ -4,16 +4,16 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class p009_PalindromeNumberTest {
+class p0009_PalindromeNumberTest {
 
     @Test
     void isPalindrome() {
         boolean result;
 
-        result = new p009_PalindromeNumber().isPalindrome(1410110141);
+        result = new p0009_PalindromeNumber().isPalindrome(1410110141);
         assertTrue(result);
 
-        result = new p009_PalindromeNumber().isPalindrome(123456);
+        result = new p0009_PalindromeNumber().isPalindrome(123456);
         assertFalse(result);
     }
 }
