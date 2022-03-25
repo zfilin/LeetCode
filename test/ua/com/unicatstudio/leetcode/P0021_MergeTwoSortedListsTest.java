@@ -30,5 +30,7 @@ class P0021_MergeTwoSortedListsTest {
         }
 
         ListNode result = new P0021_MergeTwoSortedLists().mergeTwoLists(list1, list2);
+
+        // I don't know how to check this case, will use debugger
     }
 }
