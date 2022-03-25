@@ -11,32 +11,21 @@ class ListNode {
 public class P0021_MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if (list1 == null) return list2;
-        else if (list2 == null) return list1;
+        if (list2 == null) return list1;
 
-        ListNode result;
-        ListNode tail;
-        if(list1.val < list2.val) {
-            result = tail = list1;
-            list1 = list1.next;
-        } else {
-            result = tail = list2;
-            list2 = list2.next;
+        ListNode t;
+        if (list1.val > list2.val) {
+            t = list1; list1 = list2; list2 = t;
         }
 
-        while (list1 != null && list2 != null)
-        {
-            if(list1.val < list2.val) {
-                tail.next = list1;
+        ListNode result = list1;
+        while (list2 != null) {
+            while (list1.next != null && list1.next.val < list2.val)
                 list1 = list1.next;
-            } else {
-                tail.next = list2;
-                list2 = list2.next;
-            }
-            tail = tail.next;
+            t = list2;
+            list2 = list1.next;
+            list1.next = list1 = t;
         }
-
-        if (list1 != null) tail.next = list1;
-        else tail.next = list2;
 
         return result;
     }
