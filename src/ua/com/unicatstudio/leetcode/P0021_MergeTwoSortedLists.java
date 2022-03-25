@@ -16,12 +16,10 @@ public class P0021_MergeTwoSortedLists {
         ListNode result;
         ListNode tail;
         if(list1.val < list2.val) {
-            result = list1;
-            tail = list1;
+            result = tail = list1;
             list1 = list1.next;
         } else {
-            result = list2;
-            tail = list2;
+            result = tail = list2;
             list2 = list2.next;
         }
 
