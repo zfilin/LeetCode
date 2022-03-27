@@ -9,6 +9,8 @@ class ListNode {
  }
 
 public class P0021_MergeTwoSortedLists {
+    // https://leetcode.com/problems/merge-two-sorted-lists/
+
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if (list1 == null) return list2;
         if (list2 == null) return list1;
