@@ -2,6 +2,7 @@ package ua.com.unicatstudio.leetcode;
 
 public class P0028_ImplementStrStr {
     // https://leetcode.com/problems/implement-strstr/
+    // https://www.linkedin.com/posts/alexander-lapshyn_leetcode-activity-6914664147985010688-gaU8
 
     public int strStr(String haystack, String needle) {
         if (needle.isEmpty()) return 0;
