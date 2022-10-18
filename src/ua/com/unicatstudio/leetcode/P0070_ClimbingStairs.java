@@ -1,7 +1,10 @@
 package ua.com.unicatstudio.leetcode;
 
+/**
+ * https://leetcode.com/problems/climbing-stairs/
+ */
 public class P0070_ClimbingStairs {
-  // https://leetcode.com/problems/climbing-stairs/
+
   public int climbStairs(int n) {
 
     int x = 1;
